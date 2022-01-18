@@ -31,7 +31,7 @@ before_action:set_article, only: [:show,:edit,:update,:destroy]
          def update
           if @article.update(articles_prams)
             flash[:notice] = "Article was updated successfully."
-            redirect_to @article
+            redirect_to article_path
           else
             render 'edit'
           end
