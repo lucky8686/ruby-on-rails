@@ -52,7 +52,7 @@ before_action :require_same_user, only: [:edit, :update, :destroy]
         end
 
         def articles_prams
-          params.require(:article).permit(:title, :description)
+          params.require(:article).permit(:title, :description, category_ids: [])
         end
 
 
