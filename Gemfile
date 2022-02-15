@@ -23,6 +23,7 @@ gem 'jbuilder', '~> 2.7'
 gem 'bcrypt', '~> 3.1.7'
 gem 'will_paginate', '~> 3.3'
 gem 'rexml', require: false
+gem 'acts_as_commentable_with_threading'
 
 
 # Use Active Storage variant
